@@ -1,0 +1,21 @@
+#Check given number is prime number or not.
+def PrimeChecker(a):  
+    # Checking that given number is more than 1  
+    if a > 1:  
+    
+        for i in range(2, int(a/2) + 1):  
+            # If the given number is divisible or not  
+            if (a % i) == 0:  
+                print(a, "is not a prime number")  
+                break  
+        # Else it is a prime number  
+        else:  
+            print(a, "is a prime number")  
+    # If the given number is 1  
+    else:  
+        print(a, "Please enter valid number.")  
+# Taking an input number from the user  
+a = int(input("Enter a number:"))  
+# Printing result  
+PrimeChecker(a)  
+
